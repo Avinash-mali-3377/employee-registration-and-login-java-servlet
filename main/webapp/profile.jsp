@@ -51,10 +51,9 @@
     <div class="profile-container">
         <h2>User Profile</h2>
         
-        <%-- ✅ Check if the user is logged in --%>
         <%
             if (session.getAttribute("id") == null) {
-                response.sendRedirect("login.html"); // Redirect to login page if session is empty
+                response.sendRedirect("login.html"); 
             }
         %>
 
